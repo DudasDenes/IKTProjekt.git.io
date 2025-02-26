@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festékek-MMD Festékbolt</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Logó" class="logo">
+            <h1>Festékeink</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="faanyagok.html">Faanyagok</a></li>
+                    <li><a href="festekek.html">Festékek</a></li>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Festékeink</h2>
+        <p>Próbálja ki ezeket a remek festékeket...</p>
+    </header>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="festek1.jpg" alt="Festék 1"></div>
+            <div class="slide"><img src="festek2.jpg" alt="Festék 2"></div>
+            <div class="slide"><img src="festek3.jpg" alt="Festék 3"></div>
+            <div class="slide"><img src="festek4.jpg" alt="Festék 4"></div>
+            <div class="slide"><img src="festek5.jpg" alt="Festék 5"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function moveSlide(step) {
+            slideIndex = (slideIndex + step + slides.length) % slides.length;
+            document.querySelector('.slider').style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+    </script>
+    <section>
+        <p>Fedezze fel a MMD Festékbolt prémium minőségű festékeit! Kínálatunkban széles választékban találhatóak különböző típusú festékek, amelyek tökéletesek minden típusú projekt számára – legyen az otthoni felújítás, új építkezés, vagy egyedi dekorációs ötletek megvalósítása.</p>
+
+        <h3>Beltéri Festékek</h3>
+        <p>Beltéri festékeink tökéletesek a lakás minden helyiségéhez. Kiváló fedőképességgel és színtartóssággal rendelkeznek, így hosszú évekig élvezheti az új színt.</p>
+        <ul>
+            <li><strong>Matt festékek</strong> - A legjobb választás a finom, elegáns megjelenéshez, elkerülve a tükröződéseket.</li>
+            <li><strong>Selyemfényű festékek</strong> - Kellemes, enyhén fényes felületet biztosítanak, miközben könnyen tisztán tarthatók.</li>
+            <li><strong>Washable festékek</strong> - Kiváló választás gyerekszobákba vagy erősen igénybevett helyiségekbe, mivel könnyen tisztíthatóak.</li>
+        </ul>
+
+        <h3>Kültéri Festékek</h3>
+        <p>Kültéri festékeink időjárásállóak, UV- és vízállóak, biztosítva a tartósságot és védelmet a külvilág viszontagságaival szemben.</p>
+        <ul>
+            <li><strong>Fa és fém festékek</strong> - Kifejezetten kültéri fa- és fémfelületekhez készültek, hosszú élettartammal és magas kopásállósággal.</li>
+            <li><strong>Akryl festékek</strong> - Nagyon tartósak és vízlepergető hatással bírnak, így tökéletesek az erkélyekhez, kerítésekhez és más kültéri elemekhez.</li>
+            <li><strong>Vízálló festékek</strong> - A legjobb választás fürdőszobákba, konyhákba és egyéb nedves környezetekbe, hogy megvédje falait a nedvességtől.</li>
+        </ul>
+
+        <h3>Speciális Festékek</h3>
+        <p>Miután megtalálta a klasszikus festékeket, kínálatunkban különleges, egyedi igényekhez igazodó festékek is szerepelnek:</p>
+        <ul>
+            <li><strong>Tapétaragasztók</strong> - A legjobb minőségű tapétaragasztóink biztosítják, hogy tapétái biztonságosan rögzüljenek a falon.</li>
+            <li><strong>Antik hatású festékek</strong> - Olyan festékek, amelyek a régi, antik hatást keltik, tökéletesek bútorok vagy falak felújításához.</li>
+            <li><strong>Folyékony gipsz és vakolatok</strong> - Különleges textúrák kialakításához, valamint egyedi faldekorációkhoz ajánlottak.</li>
+        </ul>
+
+        <p>Akár egy egyszerű szobafestés, akár egy bonyolultabb kültéri projekt áll előttünk, biztos lehet benne, hogy nálunk megtalálja az Ön igényeinek legmegfelelőbb terméket.</p>
+    </section>
+        <p><strong>Jó festést!</strong></p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Festékbolt</p>
+    </footer>
+</body>
+</html>
