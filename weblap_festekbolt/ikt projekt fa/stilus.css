@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+/* HEADER */
 header {
     background: url('images/header-bg.jpg') no-repeat center center/cover;
     color: white;
@@ -13,6 +14,7 @@ header {
     text-align: center;
     position: relative;
 }
+
 .header-container { 
     display: flex;
     align-items: center;
@@ -21,7 +23,8 @@ header {
     position: relative;
     z-index: 1;
 }
-    header::after {
+
+header::after {
     content: "";
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -38,11 +41,13 @@ header {
     align-items: center;
     padding: 0 20px;
 }
+
 .logo {
     width: 80px;
     height: auto;
     margin-right: 30px;
 }
+
 header h1 {
     margin-right: auto;
     margin-left: auto;
@@ -51,6 +56,7 @@ header h1 {
     position: relative;
 }
 
+/* NAVIGATION */
 nav ul {
     list-style: none;
     padding: 0;
@@ -67,6 +73,8 @@ nav ul li a {
     font-weight: bold;
     font-size: 1.2em;
 }
+
+/* MAIN CONTENT */
 main {
     padding: 20px;
     max-width: 900px;
@@ -97,16 +105,42 @@ p {
     font-size: 1.1em;
     line-height: 1.6;
 }
+
+/* LISTA ÉS KÉPEK STÍLUSAI */
+.kiskepoldalra {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.list-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Listaelemek ikonokkal */
 ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+    list-style: none;
+    padding: 0;
 }
 
 ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    background-image: url(images/logo.png);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    background-image: url('images/logo.png'); /* Lista ikon */
     background-repeat: no-repeat;
     background-size: 16px 16px;
     background-position: 0 50%;
@@ -114,6 +148,15 @@ ul li {
     line-height: 1.5;
 
 }
+
+ul li img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* KÉPEK STÍLUSAI */
 img {
     width: 250px;
     height: auto;
@@ -123,6 +166,7 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -133,7 +177,7 @@ footer {
     bottom: 0;
 }
 
-/* Reszponzív stílusok */
+/* RESZPONZÍV STÍLUSOK */
 @media (max-width: 1440px) {
     main {
         max-width: 1000px;
@@ -183,6 +227,8 @@ footer {
         width: 180px;
     }
 }
+
+/* KÉPDIAVETÍTŐ (SLIDER) */
 .slider-container {
     position: relative;
     max-width: 350px;
