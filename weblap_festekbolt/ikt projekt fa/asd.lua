@@ -8,3 +8,4 @@
   |-- images
       |-- header-bg.jpg
       |-- icon.jpg
+      |-- nyitvatartas.png
