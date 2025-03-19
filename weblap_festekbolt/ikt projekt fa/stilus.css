@@ -47,6 +47,8 @@ header::after {
     height: auto;
     margin-right: 30px;
     float: left;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nyitvatartas{
