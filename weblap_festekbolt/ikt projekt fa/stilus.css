@@ -264,12 +264,12 @@ footer {
 /* KÉPDIAVETÍTŐ (SLIDER) */
 .slider-container {
     position: relative;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 325px;
+    max-height: 325px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #f9f9f9;
 }
 
 .slider {
@@ -283,8 +283,9 @@ footer {
 }
 
 .slider img {
-    width: 100%;
     border-radius: 10px;
+    width: 100%; 
+    height: auto; 
 }
 
 .prev, .next {
