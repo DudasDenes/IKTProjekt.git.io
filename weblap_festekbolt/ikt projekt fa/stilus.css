@@ -14,7 +14,16 @@ header {
     text-align: center;
     position: relative;
 }
-
+.header-menu a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    transition: transform 0.2s,font-size 0.2s;
+  }
+.header-menu a:hover {
+    color: rgb(241, 232, 180);
+    transform: scale(1.8); 
+    font-size: 1.4em;
+}
 .header-container { 
     display: flex;
     align-items: center;
